@@ -2,6 +2,11 @@
 This repo relates to a stackoverflow question posted on XXXXXX. The gist of it is that mongoose successfully returns data when doing an initial query, but when a second query is executed right after, it hangs.
 
 ## Usage
+Install dependencies
+```
+yarn install
+```
+
 Start a local MongoDB instance. Needs MongoDB cli installed globally, refer to official MongoDB docs.
 ```
 npm run start-mongo
