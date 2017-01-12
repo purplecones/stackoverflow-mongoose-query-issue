@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "start-mongo": "mongod --dbpath=./data --fork --port 27017 --logpath ./data/log",
+    "import": "mongoimport -d mydb -c locations --type csv --file locations.csv --headerline",
+    "start": "./node_modules/babel-watch/babel-watch.js index.js",
+    "poststop": "npm run kill-mongo",
+    "kill-mongo": "mongo admin --eval 'db.shutdownServer()' > ./data/log"
+  },
+  "dependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-polyfill": "^6.20.0",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-stage-2": "^6.18.0",
+    "babel-watch": "^2.0.5",
+    "mongoose": "^4.7.6"
+  }
+}
