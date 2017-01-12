@@ -9,7 +9,7 @@ export default class Mongo {
     mongoose.connect(MONGO_URL);
     this.db = mongoose.connection;
     this.db.on('connected', function () {
-      console.log('Mongoose default connection open to ');
+      console.log('Mongoose default connection open');
     });
 
     // If the connection throws an error
