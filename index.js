@@ -15,10 +15,10 @@ const main = async () => {
 
   mongo.close();
 
-  // console.log({
-  //   dataSet1,
-  //   dataSet2,
-  // });
+  console.log({
+    dataSet1,
+    // dataSet2,
+  });
 };
 
 main();
