@@ -6,7 +6,8 @@ const MONGO_URL = "mongodb://localhost:27017/mydb";
 export default class Mongo {
   constructor() {
     mongoose.Promise = global.Promise;
-    this.connect();
+    mongoose.connect(MONGO_URL);
+    this.db = mongoose.connection;
     this.db.on('connected', function () {
       console.log('Mongoose default connection open to ');
     });
@@ -20,11 +21,6 @@ export default class Mongo {
     this.db.on('disconnected', function () {
       console.log('Mongoose default connection disconnected');
     });
-  }
-
-  connect() {
-    mongoose.connect(MONGO_URL);
-    this.db = mongoose.connection;
   }
 
   close() {
