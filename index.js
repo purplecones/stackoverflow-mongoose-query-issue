@@ -9,15 +9,15 @@ const main = async () => {
   const dataSet1 = await mongo.find('locations', {
     limit: 1,
   });
-  const dataSet2 = await mongo.find('articles', {
-    limit: 2,
-  });
+  // const dataSet2 = await mongo.find('articles', {
+  //   limit: 2,
+  // });
 
   mongo.close();
 
   console.log({
     dataSet1,
-    dataSet2,
+    // dataSet2,
   });
 };
 
