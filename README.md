@@ -1,5 +1,5 @@
 ## Background
-This repo relates to a stackoverflow question posted on XXXXXX. The gist of it is that mongoose successfully returns data when doing an initial query, but when a second query is executed right after, it hangs.
+This repo relates to a stackoverflow question posted [here](http://stackoverflow.com/questions/41618668/mongoose-hangs-on-second-query). The gist of it is that mongoose successfully returns data when doing an initial query, but when a second query is executed right after, it hangs.
 
 ## Usage
 Install dependencies
