@@ -43,9 +43,8 @@ console.log({
 Here we are querying the `locations` collection and just returning one document.
 ```bash
 Mongoose default connection open to
-(node:83741) DeprecationWarning: Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
 { dataSet1:
-   [ { _id: 5877ab2bafa6804e049dfab0,
+   [ { _id: 5877b4568f5c931b5f84cd93,
        name: 'Jane Doe',
        address: '123 Main St',
        city: 'Whereverville',
@@ -77,9 +76,8 @@ Here we are making a second query to the `locations` collection for two document
 
 ```bash
 >>> RESTARTING <<<
-(node:83962) DeprecationWarning: Calling an asynchronous function without callback is deprecated.
+(node:87245) DeprecationWarning: Calling an asynchronous function without callback is deprecated.
 Mongoose default connection open to
-(node:83970) DeprecationWarning: Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
 ^C
 ```
 The process hangs and does not return anything. Can't quite figure out why this happens.
