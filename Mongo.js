@@ -22,7 +22,7 @@ export default class Mongo {
   }
 
   connect() {
-    this.db = mongoose.connect(MONGO_URL);
+    mongoose.connect(MONGO_URL);
     this.db = mongoose.connection;
   }
 
