@@ -9,17 +9,17 @@ yarn install
 
 Start a local MongoDB instance. Needs MongoDB cli installed globally, refer to official MongoDB docs.
 ```
-npm run start-mongo
+yarn run start-mongo
 ```
 
 Imports a small set of sample data
 ```
-npm run import
+yarn run import
 ```
 
 Starts the demo app
 ```
-npm start
+yarn start
 ```
 
 ## One Query
