@@ -3,13 +3,13 @@ This repo relates to a stackoverflow question posted on XXXXXX. The gist of it i
 
 ## Usage
 Start a local MongoDB instance. Needs MongoDB cli installed globally, refer to official MongoDB docs.
-`npm run start-mongo`
+```npm run start-mongo```
 
 Imports a small set of sample data
-`npm run import`
+```npm run import```
 
 Starts the demo app
-`npm start`
+```npm start```
 
 ## One Query
 ```javascript
